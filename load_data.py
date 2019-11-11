@@ -53,8 +53,6 @@ except Exception as e:
 	print("Error:{}".format(str(e))) 
 	con.commit()
 
-user_df = pd.concat([pd.read_csv(f) for f in glob.glob('dataset/user_*.csv')], ignore_index = True)
-
 user_data = pd.concat([pd.read_csv(f) for f in glob.glob('dataset/user_*.csv')], ignore_index = True)
 user_filename=os.path.join(outdir,'user.csv')
 #exclude data that is missing id's
