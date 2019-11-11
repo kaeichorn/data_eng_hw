@@ -1,7 +1,8 @@
+i.
 queries were run using pgadmin container
 
 What is the number of unique users?
-select count(distinct user_id) from "user"
+select count(distinct user_id) from "user" 2902
 
 Who are the marketing ad providers?
 select distinct provider from marketing
