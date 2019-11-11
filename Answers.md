@@ -20,23 +20,23 @@ iii.
 Which user property is changed the most frequently?
 I interpreted "changed most frequently" as any input or update to the value. Example: for user_id = '3f5e74dbdcf92513db71959e97c07fe5', 
 the property drinking received 5 inputs or updates. Sex also received 5. (Query ```select * from "user" where user_id = '3f5e74dbdcf92513db71959e97c07fe5'
-order by property;```)
+order by property,event_ts;```)
 
-| property      | value |
-|---------------|-------|
-| drinking      | Yes   |
-| drinking      |       |
-| drinking      | Maybe |
-| drinking      |       |
-| drinking      | Yes   |
-| notifications | TRUE  |
-| sex           |       |
-| sex           | M     |
-| sex           |       |
-| sex           |       |
-| sex           | M     |
-| smoking       | Yes   |
-| smoking       |       |
+| property      | value | event_ts                   |
+|---------------|-------|----------------------------|
+| drinking      |       | 2019-07-02 18:42:45.174561 |
+| drinking      |       | 2019-07-02 18:42:45.176645 |
+| drinking      | Yes   | 2019-07-03 18:42:45.200174 |
+| drinking      | Maybe | 2019-07-03 18:42:45.214254 |
+| drinking      | Yes   | 2019-07-04 18:42:45.223076 |
+| notifications | TRUE  | 2019-07-01 18:42:45.160142 |
+| sex           | M     | 2019-07-02 18:42:45.176041 |
+| sex           |       | 2019-07-04 18:42:45.218694 |
+| sex           | M     | 2019-07-05 18:42:45.239307 |
+| sex           |       | 2019-07-05 18:42:45.258188 |
+| sex           |       | 2019-07-07 18:42:45.289887 |
+| smoking       |       | 2019-07-04 18:42:45.225947 |
+| smoking       | Yes   | 2019-07-05 18:42:45.244713 |
 
 So to answer the question - Drinking was changed most frequently  
 
