@@ -28,24 +28,16 @@ So to answer the question - Drinking was changed most frequently
 iv.
 How many users where shown a Snapchat ad on July 3rd, 2019?
 i interpreted this as unique users. Answer 236
-```select count(distinct user_id) 
-from marketing join "user" on marketing.phone_id ="user".phone_id
-where marketing.provider='Snapchat' and date(marketing.event_ts)='2019-07-03'```
+```select count(distinct user_id) from marketing join "user" on marketing.phone_id ="user".phone_id where marketing.provider='Snapchat' and date(marketing.event_ts)='2019-07-03'```
 
 there were 749 Snapchat 'events' on that day
-```select count(marketing.event_id) 
-from marketing join "user" on marketing.phone_id ="user".phone_id
-where marketing.provider='Snapchat' and date(marketing.event_ts)='2019-07-03'```
+```select count(marketing.event_id) from marketing join "user" on marketing.phone_id ="user".phone_id where marketing.provider='Snapchat' and date(marketing.event_ts)='2019-07-03'```
 
 v.
 Which ad was showed the most to users who identify as moderates?
 ad_id 4 was showed the most to users who identified as moderates at that time. 
 
-```select ad_id,count(*) from 
-marketing inner join "user" on marketing.phone_id ="user".phone_id
-where property='politics' and "value"='Moderate'
-group by ad_id
-order by count(*) desc```
+```select ad_id,count(*) from marketing inner join "user" on marketing.phone_id ="user".phone_id where property='politics' and "value"='Moderate' group by ad_id order by count(*) desc```
 
 vi.
 What are the top 5 ads? Explain how you arrived at that conclusion.
