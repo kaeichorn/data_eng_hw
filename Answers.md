@@ -1,7 +1,6 @@
-i.
-queries were run using pgadmin container
+#queries were run using pgadmin container
 
-What is the number of unique users?
+i.What is the number of unique users?
 ```select count(distinct user_id) from "user"``` 2902
 
 ii.
