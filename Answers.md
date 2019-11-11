@@ -2,7 +2,7 @@ i.
 queries were run using pgadmin container
 
 What is the number of unique users?
-select count(distinct user_id) from "user" 2902
+```sql select count(distinct user_id) from "user"``` 2902
 
 ii.
 Who are the marketing ad providers?
@@ -54,8 +54,9 @@ What are the top 5 ads? Explain how you arrived at that conclusion.
 Since we don't have conversion data (whether or not a user performed an action related to the ad), I define a top or successful ad as seen by the most eyeballs. In this dataset, it would be having the most events. I interpret that as appearing on the screen. Also an ad would be successful if it's shown a lot based on the user prefrences. So if an ad is shown that means it must align with the user property values that they entered, and a successful ad has appeal to more users in the user base. 
 
 select ad_id,count(event_id) from marketing group by ad_id order by COUNT(*) desc limit 5
+
 |ad_id | count()|
-|------|--------|
+--------------
 |"1"| "745"|
 |"4"|	"731"|
 |"2"|	"689"|
