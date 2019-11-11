@@ -1,4 +1,4 @@
-step 1: in the same path as the Dockerfile ```run Docker build -t kangaroo .``` (don't miss the part to specify current directory)
+step 1: in the same path as the Dockerfile run ```docker build -t kangaroo .``` (don't miss the part to specify current directory)
 
 step 2: ```docker run -d -it -p 5432:5432  --name=pg  kangaroo```
 
