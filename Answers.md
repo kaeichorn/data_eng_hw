@@ -44,10 +44,10 @@ Since we don't have conversion data (whether or not a user performed an action r
 
 ```select ad_id,count(event_id) from marketing group by ad_id order by COUNT(*) desc limit 5```
 
-|ad_id | count()|
---------------
-|"1"| "745"|
-|"4"|	"731"|
-|"2"|	"689"|
-|"3"|	"673"|
-|"0"|	"672"|
+| ad_id | count |
+|-------|-------|
+| 1     | 745   |
+| 4     | 731   |
+| 2     | 689   |
+| 3     | 673   |
+| 0     | 672   |
