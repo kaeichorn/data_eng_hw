@@ -23,9 +23,7 @@ order by property;```)
 
 So to answer the question - Drinking was changed most frequently  
 
-```select property, count(distinct (event_id)) from "user"
-group by property 
-order by count(event_id) desc```
+```select property, count(distinct (event_id)) from "user" group by property order by count(event_id) desc```
 
 iv.
 How many users where shown a Snapchat ad on July 3rd, 2019?
