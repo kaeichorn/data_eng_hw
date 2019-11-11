@@ -19,7 +19,7 @@ Who are the marketing ad providers?
 iii.
 Which user property is changed the most frequently?
 I interpreted "changed most frequently" as any input or update to the value. Example: for user_id = '3f5e74dbdcf92513db71959e97c07fe5', 
-the property drinking received 5 inputs or updates. Sex also received 5. (Query ```select * from "user" where user_id = '3f5e74dbdcf92513db71959e97c07fe5'
+the property, drinking, received 5 inputs or updates. Sex also received 5. (Query ```select * from "user" where user_id = '3f5e74dbdcf92513db71959e97c07fe5'
 order by property,event_ts;```)
 
 | property      | value | event_ts                   |
