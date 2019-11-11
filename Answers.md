@@ -7,12 +7,14 @@ ii.
 Who are the marketing ad providers?
 ```select distinct provider from marketing```
 
-null <- null value from incomplete data
-"Instagram"
-"Facebook"
-"Inst" <- bad data
-"Snapchat"
-"Spotify"
+|   | provider  | comments                      |
+|---|-----------|-------------------------------|
+|   |           | <-- null from incomplete data |
+|   | Instagram |                               |
+|   | Facebook  |                               |
+|   | Inst      | <-- bad data                  |
+|   | Snapchat  |                               |
+|   | Spotify   |                               |
 
 iii.
 Which user property is changed the most frequently?
