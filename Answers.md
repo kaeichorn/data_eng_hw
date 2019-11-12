@@ -38,7 +38,7 @@ order by property,event_ts;```)
 | smoking       |       | 2019-07-04 18:42:45.225947 |
 | smoking       | Yes   | 2019-07-05 18:42:45.244713 |
 
-So to answer the question - Drinking was changed most frequently  
+So to answer the question - **Drinking** was changed most frequently  
 
 ```select property, count(distinct (event_id)) from "user" group by property order by count(event_id) desc```
 
